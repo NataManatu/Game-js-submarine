@@ -9,9 +9,8 @@ body {
     background-color: cornflowerblue;
     width: 100%;
     height: 600px;
-    margin-top: 450px;
+    margin-top: 600px;
     position: relative;
-
 }
 
 .game-img {
@@ -21,18 +20,15 @@ body {
 audio {
     width: 252px;
     height: 20px;
-
 }
 
 #pod-lodka {
     position: absolute;
     width: 170px;
     height: 170px;
-    margin-bottom: 200px;
-    margin-top: -57px;
     transform: scaleX(-1);
     animation: lodka-moov 20s infinite linear;
-    position: relative;
+    
 }
 
 @keyframes lodka-moov {
@@ -54,7 +50,7 @@ audio {
     animation: go-left-right 8s infinite linear;
     position: relative;
     transform: scaleX(-1);
-    filter: fliph;
+
 }
 
 @keyframes go-left-right {
@@ -85,8 +81,6 @@ audio {
     animation: go-left-right 5s infinite linear;
     position: relative;
     transform: scaleX(-1);
-    filter: fliph;
-
 }
 
 @keyframes go-left-right {
@@ -191,7 +185,7 @@ audio {
     width: 100px;
     height: 100px;
     float: right;
-    margin-top: 250px;
+    margin-top: 400px;
     animation: fish5-moov 5s infinite linear;
     position: relative;
 }
@@ -206,21 +200,52 @@ audio {
         right: calc(100% - 60px);
 
     }
+
 }
 
 #anglerfish {
     width: 150px;
     height: 150px;
-    float: right;
     margin-top: 450px;
-    animation: fish4-moov 4s infinite linear;
+    /* transition: left 15s; */
+    animation: anglerfish 8s ease infinite, fish-rotate 8s steps(1) infinite;
     position: relative;
 }
 
+@keyframes anglerfish {
+    0% {
+      left: 50px;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 50px;
+    }
+  }
+  
+  @keyframes fish-rotate {
+    0% {
+      transform: scale(-1, 1)
+    }
+    50% {
+      transform: scale(1, 1)
+    }
+    100% {
+      transform: scale(-1, 1)
+    }
+  }
+
+/* 
 #ship {
     width: 230px;
     height: 230px;
-    margin-top: 375px;
     position: relative;
-    transform: rotate(-5deg);
 }
+
+#seaweed {
+    width: 330px;
+    height: 330px;
+    margin-bottom: -45px;
+    position: relative;
+} */
