@@ -220,7 +220,7 @@ audio {
 #ship {
     width: 230px;
     height: 230px;
-    margin-top: 380px;
+    margin-top: 375px;
     position: relative;
     transform: rotate(-5deg);
 }
