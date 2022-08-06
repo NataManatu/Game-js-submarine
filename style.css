@@ -17,6 +17,7 @@ body {
 .game-img {
     cursor: pointer;
 }
+
 audio {
     width: 252px;
     height: 20px;
@@ -46,7 +47,6 @@ audio {
 
 }
 
-
 #parus-1 {
     width: 170px;
     height: 170px;
@@ -56,7 +56,6 @@ audio {
     position: relative;
     transform: scaleX(-1);
     filter: fliph;
-
 }
 
 @keyframes go-left-right {
@@ -93,19 +92,15 @@ audio {
 
 @keyframes go-left-right {
 
-    /* объявляем имя анимации: "go-left-right" */
     from {
         right: 0px;
 
     }
 
-    /* от: право: 0px */
     to {
         right: calc(100% - 60px);
 
     }
-
-    /* до: право: 100%-50px */
 }
 
 
@@ -118,13 +113,14 @@ audio {
     position: relative;
 }
 
-@keyframes fish1-moov{
+@keyframes fish1-moov {
     from {
-       right: 0px;
+        right: 0px;
 
     }
+
     to {
-       right: calc(100% - 60px);
+        right: calc(100% - 60px);
 
     }
 }
@@ -137,13 +133,15 @@ audio {
     animation: fish2-moov 8s infinite linear;
     position: relative;
 }
-@keyframes fish2-moov{
+
+@keyframes fish2-moov {
     from {
-       right: 0px;
+        right: 0px;
 
     }
+
     to {
-       right: calc(100% - 60px);
+        right: calc(100% - 60px);
 
     }
 }
@@ -156,13 +154,15 @@ audio {
     animation: fish3-moov 12s infinite linear;
     position: relative;
 }
-@keyframes fish3-moov{
+
+@keyframes fish3-moov {
     from {
-       right: 0px;
+        right: 0px;
 
     }
+
     to {
-       right: calc(100% - 60px);
+        right: calc(100% - 60px);
 
     }
 }
@@ -175,21 +175,52 @@ audio {
     animation: fish4-moov 8s infinite linear;
     position: relative;
 }
-@keyframes fish4-moov{
+
+@keyframes fish4-moov {
     from {
-       right: 0px;
+        right: 50px;
 
     }
+
     to {
-       right: calc(100% - 60px);
+        right: calc(100% - 60px);
 
     }
 }
-#anglerfish{
+
+#fish5 {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-top: 250px;
+    animation: fish5-moov 5s infinite linear;
+    position: relative;
+}
+
+@keyframes fish5-moov {
+    from {
+        right: 50px;
+
+    }
+
+    to {
+        right: calc(100% - 60px);
+
+    }
+}
+
+#anglerfish {
     width: 150px;
     height: 150px;
     float: right;
     margin-top: 450px;
     animation: fish4-moov 4s infinite linear;
-    position: relative; 
+    position: relative;
+}
+
+#ship {
+    width: 200px;
+    height: 200px;
+    margin-top: 410px;
+    margin-left: 300px;
 }
