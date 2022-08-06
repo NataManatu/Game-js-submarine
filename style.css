@@ -97,5 +97,5 @@ audio {
 #fish {
     width: 100px;
     height: 100px;
-    transform: scaleX(-1);
+    float: right;
 }
