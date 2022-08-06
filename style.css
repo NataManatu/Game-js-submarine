@@ -21,8 +21,7 @@ body {
 audio {
     width: 252px;
     height: 20px;
-    margin-top: 580px;
-    margin-left: -150px;
+
 }
 
 #pod-lodka {
@@ -219,8 +218,9 @@ audio {
 }
 
 #ship {
-    width: 200px;
-    height: 200px;
-    margin-top: 410px;
-    margin-left: 300px;
+    width: 230px;
+    height: 230px;
+    margin-top: 380px;
+    position: relative;
+    transform: rotate(-5deg);
 }
