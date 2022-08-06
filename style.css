@@ -36,7 +36,7 @@ body {
     position: relative;
     transform: scaleX(-1);
     filter: fliph;
-    
+
 }
 
 @keyframes go-left-right {
@@ -44,13 +44,13 @@ body {
     /* объявляем имя анимации: "go-left-right" */
     from {
         right: 0px;
-        
+
     }
 
     /* от: право: 0px */
     to {
         right: calc(100% - 60px);
-      
+
     }
 
     /* до: право: 100%-50px */
@@ -68,7 +68,7 @@ body {
     position: relative;
     transform: scaleX(-1);
     filter: fliph;
-    
+
 }
 
 @keyframes go-left-right {
@@ -76,19 +76,26 @@ body {
     /* объявляем имя анимации: "go-left-right" */
     from {
         right: 0px;
-        
+
     }
 
     /* от: право: 0px */
     to {
         right: calc(100% - 60px);
-      
+
     }
 
     /* до: право: 100%-50px */
 }
+
 audio {
     width: 252px;
     height: 20px;
     margin-top: 376px;
+}
+
+#fish {
+    width: 100px;
+    height: 100px;
+    transform: scaleX(-1);
 }
