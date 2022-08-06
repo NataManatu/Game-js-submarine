@@ -1,19 +1,23 @@
-let podLodka = document.getElementById("pod-lodka")
-let gamePole = document.getElementById("game-container")
+let podLodka = document.getElementById("pod-lodka");
+let gamePole = document.getElementById("game-container");
+
+var music = new Audio("audio.mp3")
+	music.play()
 
 
 
 
-var xPos = 0;
-var yPos = 0;
-var angle = 0;
 
-function animate() {
-  
-  }
 
-  requestAnimationFrame(animate);
 
-animate();
+
+
+
+
+
+
+
+
+
 
 
