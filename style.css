@@ -94,7 +94,22 @@ audio {
     margin-top: 376px;
 }
 
-#fish {
+#fish1 {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+#fish2 {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+#fish3 {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+#fish4 {
     width: 100px;
     height: 100px;
     float: right;
