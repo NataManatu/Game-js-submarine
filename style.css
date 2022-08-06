@@ -25,7 +25,21 @@ body {
     margin-bottom: 200px;
     margin-top: -57px;
     transform: scaleX(-1);
+    animation: lodka-moov 8s infinite linear;
+    position: relative;
 }
+
+@keyframes lodka-moov {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: calc(100% - 180px);
+    }
+
+}
+
 
 #parus-1 {
     width: 170px;
@@ -99,18 +113,21 @@ audio {
     height: 100px;
     float: right;
 }
+
 #fish2 {
     width: 100px;
     height: 100px;
     float: right;
     margin-top: 100px;
 }
+
 #fish3 {
     width: 100px;
     height: 100px;
     float: right;
     margin-top: 200px;
 }
+
 #fish4 {
     width: 100px;
     height: 100px;
