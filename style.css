@@ -103,14 +103,17 @@ audio {
     width: 100px;
     height: 100px;
     float: right;
+    margin-top: 100px;
 }
 #fish3 {
     width: 100px;
     height: 100px;
     float: right;
+    margin-top: 200px;
 }
 #fish4 {
     width: 100px;
     height: 100px;
     float: right;
+    margin-top: 300px;
 }
