@@ -112,6 +112,19 @@ audio {
     width: 100px;
     height: 100px;
     float: right;
+    animation: fish1-moov 8s infinite linear;
+    position: relative;
+}
+
+@keyframes fish1-moov{
+    from {
+       right: 0px;
+
+    }
+    to {
+       right: calc(100% - 60px);
+
+    }
 }
 
 #fish2 {
@@ -119,6 +132,8 @@ audio {
     height: 100px;
     float: right;
     margin-top: 100px;
+    animation: fish1-moov 8s infinite linear;
+    position: relative;
 }
 
 #fish3 {
@@ -126,6 +141,8 @@ audio {
     height: 100px;
     float: right;
     margin-top: 200px;
+    animation: fish1-moov 8s infinite linear;
+    position: relative;
 }
 
 #fish4 {
@@ -133,4 +150,6 @@ audio {
     height: 100px;
     float: right;
     margin-top: 300px;
+    animation: fish1-moov 8s infinite linear;
+    position: relative;
 }
