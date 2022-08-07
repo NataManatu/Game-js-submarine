@@ -6,10 +6,10 @@ music.play()
 
 function upMove(event) {
 
-		// let code = event.keyCode || event.charCode;
-		// if (code != 38 && code != 40)
-		// 	return;
-		// podLodka.style.top = podLodka.offsetLeft+ (code == 38 ? -70 : 70) + 'px';
+	// let code = event.keyCode || event.charCode;
+	// if (code != 38 && code != 40)
+	// 	return;
+	// podLodka.style.top = podLodka.offsetLeft+ (code == 38 ? -70 : 70) + 'px';
 
 
 	var y = 0;
@@ -21,6 +21,7 @@ function upMove(event) {
 		y = y + 100;
 		podLodka.style.top = y + 'px';
 	}
+	
 
 }
 
