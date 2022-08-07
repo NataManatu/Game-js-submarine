@@ -1,10 +1,17 @@
-let podLodka = document.getElementById("pod-lodka");
 let gamePole = document.getElementById("game-container");
+let podLodka = document.getElementById("pod-lodka");
 
-var music = new Audio("audio.mp3")
-	music.play()
+let music = new Audio("audio.mp3");
+music.play()
 
-  
+
+
+
+	
+	 
+	  
+	
+
 
 
 
