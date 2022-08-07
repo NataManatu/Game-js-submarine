@@ -23,9 +23,12 @@ audio {
 }
 
 #pod-lodka {
-    position: absolute;
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 180px;
+    background-image: url(pl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     transform: scaleX(-1);
     animation: lodka-moov 20s infinite linear;
     
@@ -43,9 +46,12 @@ audio {
 }
 
 #parus-1 {
-    width: 170px;
-    height: 170px;
-    margin-top: -170px;
+    width: 200px;
+    height: 180px;
+    background-image: url(p2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -180px;
     float: right;
     animation: go-left-right 8s infinite linear;
     position: relative;
@@ -74,9 +80,12 @@ audio {
 
 
 #parus-2 {
-    width: 170px;
-    height: 170px;
-    margin-top: -170px;
+    width: 200px;
+    height: 180px;
+    background-image: url(p2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -180px;
     float: right;
     animation: go-left-right 5s infinite linear;
     position: relative;
@@ -99,6 +108,9 @@ audio {
 
 
 #fish1 {
+    background-image: url(fish.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 90px;
     height: 90px;
     float: right;
@@ -119,10 +131,13 @@ audio {
 }
 
 #fish2 {
+    background-image: url(fish.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100px;
     height: 100px;
     float: right;
-    margin-top: 100px;
+
     animation: fish2-moov 8s infinite linear;
     position: relative;
 }
@@ -140,10 +155,13 @@ audio {
 }
 
 #fish3 {
+    background-image: url(fish.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 80px;
     height: 80px;
     float: right;
-    margin-top: 200px;
+  
     animation: fish3-moov 12s infinite linear;
     position: relative;
 }
@@ -161,10 +179,13 @@ audio {
 }
 
 #fish4 {
+    background-image: url(fish.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100px;
     height: 100px;
     float: right;
-    margin-top: 300px;
+   
     animation: fish4-moov 8s infinite linear;
     position: relative;
 }
@@ -182,10 +203,13 @@ audio {
 }
 
 #fish5 {
+    background-image: url(fish.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100px;
     height: 100px;
     float: right;
-    margin-top: 400px;
+   
     animation: fish5-moov 5s infinite linear;
     position: relative;
 }
@@ -204,11 +228,14 @@ audio {
 }
 
 #anglerfish {
+    background-image: url(anglerfish.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 150px;
     height: 150px;
-    margin-top: 450px;
-    /* transition: left 15s; */
-    animation: anglerfish 8s ease infinite, fish-rotate 8s steps(1) infinite;
+   
+ 
+    animation: anglerfish 9s ease infinite, fish-rotate 9s steps(1) infinite;
     position: relative;
 }
 
