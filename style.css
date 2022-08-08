@@ -6,8 +6,9 @@ body {
 }
 
 #game-container {
+    margin: 0 auto;
     background-color: cornflowerblue;
-    width: 100%;
+    width: 1600px;
     height: 600px;
     margin-top: 600px;
     position: relative;
@@ -32,7 +33,7 @@ audio {
     background-size: cover;
     position: relative;
     transform: scaleX(-1);
-    /* animation: lodka-moov 20s infinite linear; */
+    animation: lodka-moov 20s infinite linear;
 
 }
 
@@ -71,7 +72,7 @@ audio {
 
     /* от: право: 0px */
     to {
-        right: calc(100% - 60px);
+        right: calc(100%);
 
     }
 
