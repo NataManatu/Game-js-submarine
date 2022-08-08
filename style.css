@@ -31,7 +31,7 @@ audio {
     background-image: url(pl.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: absolute;
     transform: scaleX(-1);
     animation: lodka-moov 20s infinite linear;
 
@@ -57,7 +57,7 @@ audio {
     margin-top: -180px;
     float: right;
     animation: go-left-right 8s infinite linear;
-    position: relative;
+    position: absolute;
     transform: scaleX(-1);
 
 }
@@ -72,7 +72,7 @@ audio {
 
     /* от: право: 0px */
     to {
-        right: calc(100%);
+        right: calc(95%);
 
     }
 
@@ -91,7 +91,7 @@ audio {
     margin-top: -180px;
     float: right;
     animation: go-left-right 5s infinite linear;
-    position: relative;
+    position: absolute;
     transform: scaleX(-1);
 }
 
@@ -103,7 +103,7 @@ audio {
     }
 
     to {
-        right: calc(100% - 60px);
+        right: calc(95% - 60px);
 
     }
 }
@@ -114,12 +114,12 @@ audio {
     background-image: url(fish.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -167px;
+   
     width: 90px;
     height: 90px;
     float: right;
     animation: fish1-moov 10s infinite linear;
-    position: relative;
+    position: absolute;
 }
 
 @keyframes fish1-moov {
@@ -141,9 +141,9 @@ audio {
     width: 100px;
     height: 100px;
     float: right;
-    margin-top: -57px;
+   
     animation: fish2-moov 8s infinite linear;
-    position: relative;
+    position: absolute;
 }
 
 @keyframes fish2-moov {
@@ -164,10 +164,10 @@ audio {
     background-size: cover;
     width: 80px;
     height: 80px;
-    margin-top: 30px;
+    
     float: right;
     animation: fish3-moov 12s infinite linear;
-    position: relative;
+    position: absolute;
 }
 
 @keyframes fish3-moov {
@@ -188,10 +188,10 @@ audio {
     background-size: cover;
     width: 100px;
     height: 120px;
-    margin-top: 100px;
+  
     float: right;
     animation: fish4-moov 8s infinite linear;
-    position: relative;
+    position: absolute;
 }
 
 @keyframes fish4-moov {
@@ -212,10 +212,10 @@ audio {
     background-size: cover;
     width: 100px;
     height: 100px;
-    margin-top: 200px;
+   
     float: right;
     animation: fish5-moov 5s infinite linear;
-    position: relative;
+    position: absolute;
 }
 
 @keyframes fish5-moov {
@@ -225,7 +225,7 @@ audio {
     }
 
     to {
-        right: calc(100% - 60px);
+        right: calc(90% - 60px);
 
     }
 
@@ -237,9 +237,9 @@ audio {
     background-size: cover;
     width: 150px;
     height: 150px;
-    margin-top: 250px;
+   
     animation: anglerfish 9s ease infinite, fish-rotate 9s steps(1) infinite;
-    position: relative;
+    position: absolute;
 }
 
 @keyframes anglerfish {
