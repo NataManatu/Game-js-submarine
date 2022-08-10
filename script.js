@@ -10,25 +10,21 @@ music.play()
 
 function upMove(event) {
 
-	var y = 50;
+	var y = 0;
 	if (event.keyCode == 87) {
 		y = y - 70;
 		podLodka.style.top = y + 'px';
 
+
 	}
+
 	if (event.keyCode == 88) {
 		y = y + 100;
 		podLodka.style.top = y + 'px';
-
 	}	// alert( event.key)
 }
 addEventListener("keydown", upMove)
 
-function MacroCollision() {
-	if (parus_1 < 35 && parus_1 > 0 && parus_2 >= 100) {
-        alert("game over!!!")
-    }
-}
 
 
 
