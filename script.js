@@ -25,17 +25,7 @@ function upMove(event) {
 }
 addEventListener("keydown", upMove)
 
-function isCollide(a, b) {
-   if (
-        ((a.y + a.height) < (b.y)) ||
-        (a.y > (b.y + b.height)) ||
-        ((a.x + a.width) < b.x) ||
-        (a.x > (b.x + b.width))
-    ){
-		alert("cc")
-	}
 
-}
 
 
 
