@@ -8,7 +8,7 @@ body {
 #game-container {
     margin: 0 auto;
     background-color: cornflowerblue;
-    width: 1600px;
+    width: 100%;
     height: 600px;
     margin-top: 600px;
     position: relative;
@@ -28,7 +28,7 @@ audio {
 #pod-lodka {
     width: 200px;
     height: 180px;
-    background-image: url(pl.jpg);
+    background-image: url(submarine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -51,7 +51,7 @@ audio {
 #parus-1 {
     width: 200px;
     height: 180px;
-    background-image: url(p2.png);
+    background-image: url(parus2.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -180px;
@@ -85,7 +85,7 @@ audio {
 #parus-2 {
     width: 200px;
     height: 180px;
-    background-image: url(p2.png);
+    background-image: url(parus2.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -180px;
