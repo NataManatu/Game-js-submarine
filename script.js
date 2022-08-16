@@ -14,6 +14,7 @@ function upMove(event) {
 	if (event.keyCode == 87) {
 		y = y - 70;
 		podLodka.style.top = y + 'px';
+		// alert("up")
 
 
 	}
@@ -21,7 +22,8 @@ function upMove(event) {
 	if (event.keyCode == 88) {
 		y = y + 100;
 		podLodka.style.top = y + 'px';
-	}	// alert( event.key)
+		
+	}	
 }
 addEventListener("keydown", upMove)
 

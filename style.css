@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
     background-color: cornflowerblue;
     width: 100%;
-    height: 600px;
+    height: 800px;
     margin-top: 600px;
     position: relative;
 }
@@ -64,22 +64,17 @@ audio {
 
 @keyframes go-left-right {
 
-    /* объявляем имя анимации: "go-left-right" */
     from {
         right: 0px;
 
     }
 
-    /* от: право: 0px */
     to {
         right: calc(95%);
 
     }
 
-    /* до: право: 100%-50px */
 }
-
-
 
 
 #parus-2 {
@@ -109,12 +104,10 @@ audio {
 }
 
 
-
 #fish1 {
     background-image: url(fish.gif);
     background-repeat: no-repeat;
     background-size: cover;
-   
     width: 90px;
     height: 90px;
     float: right;
@@ -141,7 +134,7 @@ audio {
     width: 100px;
     height: 100px;
     float: right;
-   
+    margin-top: 100px;
     animation: fish2-moov 8s infinite linear;
     position: absolute;
 }
@@ -164,7 +157,7 @@ audio {
     background-size: cover;
     width: 80px;
     height: 80px;
-    
+    margin-top: 200px;
     float: right;
     animation: fish3-moov 12s infinite linear;
     position: absolute;
@@ -188,7 +181,7 @@ audio {
     background-size: cover;
     width: 100px;
     height: 120px;
-  
+    margin-top: 300px;
     float: right;
     animation: fish4-moov 8s infinite linear;
     position: absolute;
@@ -212,7 +205,7 @@ audio {
     background-size: cover;
     width: 100px;
     height: 100px;
-   
+    margin-top: 400px;
     float: right;
     animation: fish5-moov 5s infinite linear;
     position: absolute;
@@ -237,7 +230,7 @@ audio {
     background-size: cover;
     width: 150px;
     height: 150px;
-   
+    margin-top: 600px;
     animation: anglerfish 9s ease infinite, fish-rotate 9s steps(1) infinite;
     position: absolute;
 }
@@ -269,4 +262,3 @@ audio {
         transform: scale(-1, 1)
     }
 }
-
