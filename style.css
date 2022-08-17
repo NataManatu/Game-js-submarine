@@ -108,8 +108,8 @@ audio {
     background-image: url(fish.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     float: right;
     animation: fish1-moov 10s infinite linear;
     position: absolute;
