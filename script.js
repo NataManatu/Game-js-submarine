@@ -39,13 +39,13 @@ let gameEnded = false;
 lst.forEach((element) => {
 	// console.log(element)
 
-	setInterval(() => {
+	let interval = setInterval(() => {
 		let selection = podLodka;
 		let rectSelection = selection.getBoundingClientRect();
 		let rect = element.getBoundingClientRect();
 		let gameOver = document.getElementById("game-over");
-		gameOver.innerHTML = '<p>твой счет  '+ gameScore +' Game over!</p>'
-	
+		gameOver.innerHTML = '<p>твой счет  ' + gameScore + '<br> Game over!</p>'
+
 		if (rect.bottom > rectSelection.top
 			&& rect.right > rectSelection.left
 			&& rect.top < rectSelection.bottom
@@ -55,7 +55,8 @@ lst.forEach((element) => {
 		}
 		if (gameScore <= -10) {
 			gameEnded = true
-			gameOver.style.display="block"
+			gameOver.style.display = "block"
+			clearInterval(interval)
 			// alert("твой счет " + gameScore + " game over!")
 		}
 
