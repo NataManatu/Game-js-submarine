@@ -11,7 +11,7 @@ let fish_3 = document.getElementById("fish3");
 let fish_4 = document.getElementById("fish4");
 let fish_5 = document.getElementById("fish5");
 let anglerfish = document.getElementById("anglerfish")
-let elem = document.querySelectorAll(".game-img")
+
 
 let gameScore = 0
 
@@ -33,23 +33,40 @@ function move(event) {
 }
 addEventListener("keydown", move)
 
+
+let lst = document.querySelectorAll('game-img');
+
+
 setInterval(() => {
 	let selection = podLodka;
 	let rectSelection = selection.getBoundingClientRect();
-	let rect = elem.getBoundingClientRect()
+	let rect = fish_1.getBoundingClientRect()
+
 
 	if (rect.bottom > rectSelection.top
 		&& rect.right > rectSelection.left
 		&& rect.top < rectSelection.bottom
 		&& rect.left < rectSelection.right) {
-		gameScore--
+		gameScore-=1
 		alert("твой счет " + gameScore)
 	}
 
-
-
 }, 500);
 
+setInterval(() => {
+	let selection = podLodka;
+	let rectSelection = selection.getBoundingClientRect();
+	let rect = anglerfish.getBoundingClientRect()
 
+
+	if (rect.bottom > rectSelection.top
+		&& rect.right > rectSelection.left
+		&& rect.top < rectSelection.bottom
+		&& rect.left < rectSelection.right) {
+		gameScore-=10
+		alert("твой счет " + gameScore)
+	}
+
+}, 500);
 
 
