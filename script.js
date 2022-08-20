@@ -32,61 +32,37 @@ function move(event) {
 }
 addEventListener("keydown", move)
 
-//создала псевдомассив 
-let lst = document.querySelectorAll('.game-img');
 
+//создала псевдомассив для столкновения с каждым элементом
+let lst = document.querySelectorAll('.game-img');
+let gameEnded = false
 lst.forEach((element) => {
 	console.log(element)
-	
+
 	setInterval(() => {
-	let selection = podLodka;
-	let rectSelection = selection.getBoundingClientRect();
-	let rect = element.getBoundingClientRect()
+		let selection = podLodka;
+		let rectSelection = selection.getBoundingClientRect();
+		let rect = element.getBoundingClientRect()
 
 
-	if (rect.bottom > rectSelection.top
-		&& rect.right > rectSelection.left
-		&& rect.top < rectSelection.bottom
-		&& rect.left < rectSelection.right) {
-		gameScore-=1
-		alert("твой счет " + gameScore)
-	}
+		if (rect.bottom > rectSelection.top
+			&& rect.right > rectSelection.left
+			&& rect.top < rectSelection.bottom
+			&& rect.left < rectSelection.right) {
+			gameScore -= 1
+			alert("твой счет " + gameScore)
+		}
+		if (gameScore <= -10) {
+			gameEnded = true
+			
+			alert("твой счет "  + gameScore +  " game over!")
+		}
 
-}, 500);
+	}, 500);
 
-  })
-
-// setInterval(() => {
-// 	let selection = podLodka;
-// 	let rectSelection = selection.getBoundingClientRect();
-// 	let rect = fish_1.getBoundingClientRect()
-
-
-// 	if (rect.bottom > rectSelection.top
-// 		&& rect.right > rectSelection.left
-// 		&& rect.top < rectSelection.bottom
-// 		&& rect.left < rectSelection.right) {
-// 		gameScore-=1
-// 		alert("твой счет " + gameScore)
-// 	}
-
-// }, 500);
-
-// setInterval(() => {
-// 	let selection = podLodka;
-// 	let rectSelection = selection.getBoundingClientRect();
-// 	let rect = anglerfish.getBoundingClientRect()
+})
 
 
-// 	if (rect.bottom > rectSelection.top
-// 		&& rect.right > rectSelection.left
-// 		&& rect.top < rectSelection.bottom
-// 		&& rect.left < rectSelection.right) {
-// 		gameScore-=10
-// 		alert("твой счет " + gameScore)
-// 	}
-
-// }, 500);
 
 
 
