@@ -14,7 +14,6 @@ let anglerfish = document.getElementById("anglerfish")
 
 
 let gameScore = 0
-
 let y = 0;
 
 function move(event) {
@@ -33,14 +32,16 @@ function move(event) {
 }
 addEventListener("keydown", move)
 
+//создала псевдомассив 
+let lst = document.querySelectorAll('.game-img');
 
-let lst = document.querySelectorAll('game-img');
-
-
-setInterval(() => {
+lst.forEach((element) => {
+	console.log(element)
+	
+	setInterval(() => {
 	let selection = podLodka;
 	let rectSelection = selection.getBoundingClientRect();
-	let rect = fish_1.getBoundingClientRect()
+	let rect = element.getBoundingClientRect()
 
 
 	if (rect.bottom > rectSelection.top
@@ -53,20 +54,39 @@ setInterval(() => {
 
 }, 500);
 
-setInterval(() => {
-	let selection = podLodka;
-	let rectSelection = selection.getBoundingClientRect();
-	let rect = anglerfish.getBoundingClientRect()
+  })
+
+// setInterval(() => {
+// 	let selection = podLodka;
+// 	let rectSelection = selection.getBoundingClientRect();
+// 	let rect = fish_1.getBoundingClientRect()
 
 
-	if (rect.bottom > rectSelection.top
-		&& rect.right > rectSelection.left
-		&& rect.top < rectSelection.bottom
-		&& rect.left < rectSelection.right) {
-		gameScore-=10
-		alert("твой счет " + gameScore)
-	}
+// 	if (rect.bottom > rectSelection.top
+// 		&& rect.right > rectSelection.left
+// 		&& rect.top < rectSelection.bottom
+// 		&& rect.left < rectSelection.right) {
+// 		gameScore-=1
+// 		alert("твой счет " + gameScore)
+// 	}
 
-}, 500);
+// }, 500);
+
+// setInterval(() => {
+// 	let selection = podLodka;
+// 	let rectSelection = selection.getBoundingClientRect();
+// 	let rect = anglerfish.getBoundingClientRect()
+
+
+// 	if (rect.bottom > rectSelection.top
+// 		&& rect.right > rectSelection.left
+// 		&& rect.top < rectSelection.bottom
+// 		&& rect.left < rectSelection.right) {
+// 		gameScore-=10
+// 		alert("твой счет " + gameScore)
+// 	}
+
+// }, 500);
+
 
 
