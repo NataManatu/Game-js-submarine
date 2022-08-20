@@ -1,4 +1,4 @@
-let music = new Audio("audio.mp3");
+let music = new Audio("audio2.mp3");
 music.play()
 
 let gamePole = document.getElementById("game-container");
@@ -53,7 +53,7 @@ lst.forEach((element) => {
 			gameScore -= 1
 			// alert("твой счет " + gameScore)
 		}
-		if (gameScore <= -10) {
+		if (gameScore <= -20) {
 			gameEnded = true
 			gameOver.style.display = "block"
 			clearInterval(interval)
