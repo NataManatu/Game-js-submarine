@@ -10,7 +10,7 @@ let fish_2 = document.getElementById("fish2");
 let fish_3 = document.getElementById("fish3");
 let fish_4 = document.getElementById("fish4");
 let fish_5 = document.getElementById("fish5");
-let anglerfish = document.getElementById("anglerfish")
+let anglerfish = document.getElementById("anglerfish");
 
 
 let gameScore = 0
@@ -35,27 +35,28 @@ addEventListener("keydown", move)
 
 //создала псевдомассив для столкновения с каждым элементом
 let lst = document.querySelectorAll('.game-img');
-let gameEnded = false
+let gameEnded = false;
 lst.forEach((element) => {
-	console.log(element)
+	// console.log(element)
 
 	setInterval(() => {
 		let selection = podLodka;
 		let rectSelection = selection.getBoundingClientRect();
-		let rect = element.getBoundingClientRect()
-
-
+		let rect = element.getBoundingClientRect();
+		let gameOver = document.getElementById("game-over");
+		gameOver.innerHTML = '<p>твой счет  '+ gameScore +' Game over!</p>'
+	
 		if (rect.bottom > rectSelection.top
 			&& rect.right > rectSelection.left
 			&& rect.top < rectSelection.bottom
 			&& rect.left < rectSelection.right) {
 			gameScore -= 1
-			alert("твой счет " + gameScore)
+			// alert("твой счет " + gameScore)
 		}
 		if (gameScore <= -10) {
 			gameEnded = true
-			
-			alert("твой счет "  + gameScore +  " game over!")
+			gameOver.style.display="block"
+			// alert("твой счет " + gameScore + " game over!")
 		}
 
 	}, 500);
