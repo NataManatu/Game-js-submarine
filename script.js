@@ -37,7 +37,7 @@ addEventListener("keydown", move)
 let lst = document.querySelectorAll('.game-img');
 let gameEnded = false;
 lst.forEach((element) => {
-	// console.log(element)
+	console.log(element)
 
 	let interval = setInterval(() => {
 		let selection = podLodka;
@@ -53,6 +53,16 @@ lst.forEach((element) => {
 			gameScore -= 1
 			// alert("твой счет " + gameScore)
 		}
+
+		let rect_2 = fish_2.getBoundingClientRect()
+		if (rect_2.bottom > rectSelection.top
+			&& rect_2.right > rectSelection.left
+			&& rect_2.top < rectSelection.bottom
+			&& rect_2.left < rectSelection.right) {
+			gameScore += 2
+			// alert("твой счет " + gameScore)
+		}
+
 		if (gameScore <= -20) {
 			gameEnded = true
 			gameOver.style.display = "block"
