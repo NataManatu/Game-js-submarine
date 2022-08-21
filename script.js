@@ -51,7 +51,8 @@ lst.forEach((element) => {
 			&& rect.top < rectSelection.bottom
 			&& rect.left < rectSelection.right) {
 			gameScore -= 1
-			// alert("твой счет " + gameScore)
+			let score = document.getElementById("score")
+			score.style.display = "block"
 		}
 
 		let rect_2 = fish_2.getBoundingClientRect()
@@ -60,10 +61,21 @@ lst.forEach((element) => {
 			&& rect_2.top < rectSelection.bottom
 			&& rect_2.left < rectSelection.right) {
 			gameScore += 2
-			// alert("твой счет " + gameScore)
+			let score_2 = document.getElementById("score-2")
+			score_2.style.display = "block"
 		}
 
-		if (gameScore <= -20) {
+		let rect_3 = anglerfish.getBoundingClientRect()
+		if (rect_3.bottom > rectSelection.top
+			&& rect_3.right > rectSelection.left
+			&& rect_3.top < rectSelection.bottom
+			&& rect_3.left < rectSelection.right) {
+			gameScore -= 2
+			let score_3 = document.getElementById("score-3")
+			score_3.style.display = "block"
+		}
+
+		if (gameScore <= -30) {
 			gameEnded = true
 			gameOver.style.display = "block"
 			clearInterval(interval)
