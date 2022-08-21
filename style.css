@@ -104,12 +104,41 @@ body {
     text-align: center;
     color: rgb(54, 79, 113);
     margin-top: 600px;
-    margin-left: 800px;
+    margin-left: 850px;
     animation: move-score-3 5s linear forwards;
     display: none;
 }
 
 @keyframes move-score-3 {
+    0% {
+        bottom: 0;
+    }
+
+    20% {
+        bottom: 300px;
+    }
+
+    50% {
+        bottom: 900px;
+    }
+
+}
+
+.score-4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(108, 171, 253);
+    position: absolute;
+    text-align: center;
+    color: rgb(54, 79, 113);
+    margin-top: 600px;
+    margin-left: 900px;
+    animation: move-score-4 5s linear forwards;
+    display: none;
+}
+
+@keyframes move-score-4 {
     0% {
         bottom: 0;
     }

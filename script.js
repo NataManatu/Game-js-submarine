@@ -75,6 +75,16 @@ lst.forEach((element) => {
 			score_3.style.display = "block"
 		}
 
+		let rect_4 = parus_1.getBoundingClientRect()
+		if (rect_4.bottom > rectSelection.top
+			&& rect_4.right > rectSelection.left
+			&& rect_4.top < rectSelection.bottom
+			&& rect_4.left < rectSelection.right) {
+			gameScore -= 3
+			let score_4 = document.getElementById("score-4")
+			score_4.style.display = "block"
+		}
+
 		if (gameScore <= -30) {
 			gameEnded = true
 			gameOver.style.display = "block"
