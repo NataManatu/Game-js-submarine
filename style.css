@@ -42,14 +42,68 @@ body {
     text-align: center;
     color: rgb(54, 79, 113);
     margin-top: 600px;
-    margin-left: 600px;
-    
+    margin-left: 750px;
+    animation: move-score 5s linear forwards;
 }
 
-.score p {
-    font-size: 20px;
-    font-weight: 600;
-    
+@keyframes move-score {
+    0% {
+        bottom: 0;
+    }
+
+    20% {
+        bottom: 300px;
+    }
+
+    50% {
+        bottom: 700px;
+    }
+
+    80% {
+        bottom: 750px;
+    }
+
+    90% {
+        bottom: 800px;
+    }
+
+}
+
+.score-2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(229, 252, 75);
+    position: absolute;
+    text-align: center;
+    color: rgb(54, 79, 113);
+    margin-top: 600px;
+    margin-left: 800px;
+    animation: move-score-2 5s linear forwards;
+
+}
+
+@keyframes move-score-2 {
+    0% {
+        bottom: 0;
+    }
+
+    20% {
+        bottom: 300px;
+    }
+
+    50% {
+        bottom: 700px;
+    }
+
+    80% {
+        bottom: 750px;
+    }
+
+    90% {
+        bottom: 800px;
+    }
+
 }
 
 audio {
