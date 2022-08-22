@@ -43,7 +43,7 @@ body {
     color: rgb(54, 79, 113);
     margin-top: 600px;
     margin-left: 750px;
-    animation: move-score 5s linear forwards;
+    animation: move-score 4s linear forwards;
     display: none;
 }
 
@@ -58,11 +58,14 @@ body {
 
     50% {
         bottom: 900px;
+      
     }
 
-
-
-
+    100% {
+        opacity: 0;
+        bottom: 1000px;
+       
+    }
 
 }
 
@@ -76,7 +79,7 @@ body {
     color: rgb(54, 79, 113);
     margin-top: 600px;
     margin-left: 800px;
-    animation: move-score-2 5s linear forwards;
+    animation: move-score-2 4s linear forwards;
     display: none;
 }
 
@@ -92,7 +95,12 @@ body {
     50% {
         bottom: 900px;
     }
-
+    100% {
+        opacity: 0;
+        bottom: 1000px;
+       
+    }
+  
 }
 
 .score-3 {
@@ -112,16 +120,28 @@ body {
 @keyframes move-score-3 {
     0% {
         bottom: 0;
+
     }
 
     20% {
         bottom: 300px;
+
+
     }
 
     50% {
         bottom: 900px;
     }
 
+    100% {
+
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        bottom: 1000px;
+       
+    }
 }
 
 .score-4 {
@@ -150,8 +170,13 @@ body {
     50% {
         bottom: 900px;
     }
-
+    100% {
+        opacity: 0;
+        bottom: 1000px;
+       
+    }
 }
+
 audio {
     width: 252px;
     height: 20px;

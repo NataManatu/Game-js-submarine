@@ -13,7 +13,7 @@ let fish_5 = document.getElementById("fish5");
 let anglerfish = document.getElementById("anglerfish");
 
 
-let gameScore = 0
+
 let y = 0;
 
 function move(event) {
@@ -33,12 +33,13 @@ function move(event) {
 addEventListener("keydown", move)
 
 
-//создала псевдомассив для столкновения с каждым элементом
+
 let lst = document.querySelectorAll('.game-img');
 let gameEnded = false;
+
 lst.forEach((element) => {
 	console.log(element)
-
+	let gameScore = 0
 	let interval = setInterval(() => {
 		let selection = podLodka;
 		let rectSelection = selection.getBoundingClientRect();
@@ -51,9 +52,14 @@ lst.forEach((element) => {
 			&& rect.top < rectSelection.bottom
 			&& rect.left < rectSelection.right) {
 			gameScore -= 1
+			// console.log(gameScore)
+
+			//сделать в фунцию 
 			let score = document.getElementById("score")
+			score.innerHTML = `<p> ` + gameScore + `</p>`
 			score.style.display = "block"
 		}
+
 
 		let rect_2 = fish_2.getBoundingClientRect()
 		if (rect_2.bottom > rectSelection.top
