@@ -39,30 +39,30 @@ let gameScore = 0
 function scoreMove() {
 	let score = document.getElementById("score")
 	score.innerHTML = `<p> ` + gameScore + `</p>`
-	score.style.display = "block"
+	// score.style.display = "block"
 }
 
 lst.forEach((element) => {
 	console.log(element)
-	
+
 	let interval = setInterval(() => {
 		let selection = podLodka;
 		let rectSelection = selection.getBoundingClientRect();
 		let rect = element.getBoundingClientRect();
 		let gameOver = document.getElementById("game-over");
 		gameOver.innerHTML = '<p>твой счет  ' + gameScore + '<br> Game over!</p>'
-		
+
 		if (rect.bottom > rectSelection.top
 			&& rect.right > rectSelection.left
 			&& rect.top < rectSelection.bottom
 			&& rect.left < rectSelection.right) {
 			gameScore -= 1
-			// console.log(gameScore)
 			//сделать в функцию 
 			scoreMove()
-			// alert(gameScore)
 			console.log(gameScore)
 		}
+
+		
 
 
 		// let rect_2 = fish_2.getBoundingClientRect()
@@ -104,7 +104,7 @@ lst.forEach((element) => {
 			clearInterval(interval)
 			// alert("твой счет " + gameScore + " game over!")
 		}
-		
+
 	}, 1300);
 
 })

@@ -38,13 +38,13 @@ body {
     height: 50px;
     border-radius: 50%;
     margin-top: 105px;
-    margin-left: 180px;
-    background-color: rgb(236, 255, 214);
+    margin-left: 160px;
+    background-color: antiquewhite;
     position: absolute;
     text-align: center;
     color: rgb(54, 79, 113);
     animation: move-score 4s linear forwards;
-    display: none;
+    /* display: none; */
     transform: scaleX(-1);
 }
 
