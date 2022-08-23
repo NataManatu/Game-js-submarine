@@ -37,14 +37,15 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: antiquewhite;
+    margin-top: 105px;
+    margin-left: 180px;
+    background-color: rgb(236, 255, 214);
     position: absolute;
     text-align: center;
     color: rgb(54, 79, 113);
-    margin-top: 600px;
-    margin-left: 750px;
     animation: move-score 4s linear forwards;
     display: none;
+    transform: scaleX(-1);
 }
 
 /* @keyframes move-score {
@@ -69,7 +70,7 @@ body {
 
 } */
 
-.score-2 {
+/* .score-2 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -180,7 +181,7 @@ body {
 audio {
     width: 252px;
     height: 20px;
-}
+} */
 
 #pod-lodka {
     width: 200px;

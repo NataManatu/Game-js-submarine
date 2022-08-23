@@ -12,9 +12,7 @@ let fish_4 = document.getElementById("fish4");
 let fish_5 = document.getElementById("fish5");
 let anglerfish = document.getElementById("anglerfish");
 
-
 let y = 0;
-
 
 
 function move(event) {
@@ -28,7 +26,6 @@ function move(event) {
 	if (event.keyCode == 88) {
 		y = y + 100;
 		podLodka.style.top = y + 'px';
-
 	}
 }
 addEventListener("keydown", move)
