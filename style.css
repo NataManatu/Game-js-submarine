@@ -47,7 +47,7 @@ body {
     display: none;
 }
 
-@keyframes move-score {
+/* @keyframes move-score {
     0% {
         bottom: 0;
     }
@@ -67,7 +67,7 @@ body {
        
     }
 
-}
+} */
 
 .score-2 {
     width: 50px;
@@ -268,7 +268,7 @@ audio {
     width: 120px;
     height: 120px;
     float: right;
-    animation: fish1-moov 10s infinite linear;
+    animation: fish1-moov 5s infinite linear;
     position: absolute;
 }
 
@@ -292,7 +292,7 @@ audio {
     height: 100px;
     float: right;
     margin-top: 100px;
-    animation: fish2-moov 8s infinite linear;
+    animation: fish2-moov 3s infinite linear;
     position: absolute;
 }
 
