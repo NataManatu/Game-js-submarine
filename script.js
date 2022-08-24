@@ -42,61 +42,37 @@ function scoreMove() {
 	// score.style.display = "block"
 }
 
-lst.forEach((element) => {
-	console.log(element)
 
-	let interval = setInterval(() => {
+
+let interval = setInterval(() => {
+
+	lst.forEach((element) => {
+		// console.log(element)
+
 		let selection = podLodka;
 		let rectSelection = selection.getBoundingClientRect();
 		let rect = element.getBoundingClientRect();
 		let gameOver = document.getElementById("game-over");
 		gameOver.innerHTML = '<p>твой счет  ' + gameScore + '<br> Game over!</p>'
 
+		//Если произошло столкновение с объектом
 		if (rect.bottom > rectSelection.top
 			&& rect.right > rectSelection.left
 			&& rect.top < rectSelection.bottom
 			&& rect.left < rectSelection.right) {
-			gameScore -= 1
+			//Если произошло столкновение с красной рыбой
+			if (element.classList.contains("red-fish")) {
+				gameScore += 1
+			}
+			else {
+				gameScore -= 1
+			}
 			//сделать в функцию 
 			scoreMove()
 			console.log(gameScore)
 		}
 
-		
 
-
-		// let rect_2 = fish_2.getBoundingClientRect()
-		// if (rect_2.bottom > rectSelection.top
-		// 	&& rect_2.right > rectSelection.left
-		// 	&& rect_2.top < rectSelection.bottom
-		// 	&& rect_2.left < rectSelection.right) {
-		// 	gameScore += 2
-		// 	// let score_2 = document.getElementById("score-2")
-		// 	// score_2.style.display = "block"
-		// 	scoreMove()
-		// }
-
-		// let rect_3 = anglerfish.getBoundingClientRect()
-		// if (rect_3.bottom > rectSelection.top
-		// 	&& rect_3.right > rectSelection.left
-		// 	&& rect_3.top < rectSelection.bottom
-		// 	&& rect_3.left < rectSelection.right) {
-		// 	gameScore -= 2
-		// 	// let score_3 = document.getElementById("score-3")
-		// 	// score_3.style.display = "block"
-		// 	scoreMove()
-		// }
-
-		// let rect_4 = parus_1.getBoundingClientRect()
-		// if (rect_4.bottom > rectSelection.top
-		// 	&& rect_4.right > rectSelection.left
-		// 	&& rect_4.top < rectSelection.bottom
-		// 	&& rect_4.left < rectSelection.right) {
-		// 	gameScore -= 3
-		// 	// let score_4 = document.getElementById("score-4")
-		// 	// score_4.style.display = "block"
-		// 	scoreMove()
-		// }
 
 		if (gameScore <= -30) {
 			gameEnded = true
@@ -104,10 +80,11 @@ lst.forEach((element) => {
 			clearInterval(interval)
 			// alert("твой счет " + gameScore + " game over!")
 		}
+	})
 
-	}, 1300);
+}, 600);
 
-})
+
 
 
 
