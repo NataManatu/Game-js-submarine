@@ -61,18 +61,19 @@ let interval = setInterval(() => {
 			&& rect.top < rectSelection.bottom
 			&& rect.left < rectSelection.right) {
 			//Если произошло столкновение с красной рыбой
+			console.log(element.classList.contains("red-fish"))
+
 			if (element.classList.contains("red-fish")) {
-				gameScore += 1
+				gameScore += 5
 			}
+
 			else {
-				gameScore -= 1
+				gameScore -= 2
 			}
 			//сделать в функцию 
 			scoreMove()
 			console.log(gameScore)
 		}
-
-
 
 		if (gameScore <= -30) {
 			gameEnded = true
