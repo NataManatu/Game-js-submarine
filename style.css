@@ -4,6 +4,9 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+.thunder{
+    position: absolute;
+}
 
 #game-container {
     margin: 0 auto;
@@ -320,8 +323,10 @@ p {
 }
 .ship {
     width: 400px;
-    height: 250px;
+    height: 300px;
     transform: rotate(-5deg);
+    margin-top: -50px;
 
 }
+
 
