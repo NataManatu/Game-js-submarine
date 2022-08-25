@@ -1,5 +1,29 @@
-let music = new Audio("audio2.mp3");
-music.play()
+let play = document.getElementById("play")
+let music = new Audio('audio2.mp3')
+
+
+let playing = false
+
+
+
+
+
+play.addEventListener("click", playTrack)
+
+function playTrack() {
+    if (playing) {
+        music.pause()
+        play.src = ("play.png")
+    }
+	// alert("nn")
+    else {
+        music.play()
+        play.src = ("pause.png")
+    }
+    playing = !playing
+
+    
+}
 
 let gamePole = document.getElementById("game-container");
 let parus_1 = document.getElementById("parus-1");
