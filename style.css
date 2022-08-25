@@ -57,7 +57,7 @@ body {
     width: 70px;
     height: 70px;
     margin-left: 20px;
-    cursor: pointer;  
+    cursor: pointer;
 }
 
 p {
@@ -300,3 +300,28 @@ p {
         transform: scale(-1, 1)
     }
 }
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    margin-top: 455px;
+    margin-left: 700px;
+}
+.seaweed {
+    width: 500px;
+    height: 250px;
+    margin-left: -63px;
+    margin-top: 30px;
+    position: absolute;
+
+}
+.ship {
+    width: 400px;
+    height: 250px;
+    transform: rotate(-5deg);
+
+}
+
