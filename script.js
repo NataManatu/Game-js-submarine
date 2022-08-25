@@ -64,7 +64,13 @@ let interval = setInterval(() => {
 			console.log(element.classList.contains("red-fish"))
 
 			if (element.classList.contains("red-fish")) {
-				gameScore += 5
+				gameScore += 1
+			}
+			else if (element.classList.contains("parus")) {
+				gameScore -= 3
+			}
+			else if (element.classList.contains("anglerfish")) {
+				gameScore -= 5
 			}
 
 			else {
@@ -75,7 +81,7 @@ let interval = setInterval(() => {
 			console.log(gameScore)
 		}
 
-		if (gameScore <= -30) {
+		if (gameScore <= -50) {
 			gameEnded = true
 			gameOver.style.display = "block"
 			clearInterval(interval)
