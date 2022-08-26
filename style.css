@@ -4,8 +4,12 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-.thunder{
+
+.thunder {
     position: absolute;
+    width: 1600px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 #game-container {
@@ -152,7 +156,7 @@ p {
     width: 120px;
     height: 120px;
     float: right;
-    animation: fish1-moov 5s infinite linear;
+    animation: fish1-moov 3s infinite linear;
     position: absolute;
 }
 
@@ -176,7 +180,7 @@ p {
     height: 100px;
     float: right;
     margin-top: 100px;
-    animation: fish2-moov 3s infinite linear;
+    animation: fish2-moov 8s infinite linear;
     position: absolute;
 }
 
@@ -224,7 +228,7 @@ p {
     height: 80px;
     margin-top: 300px;
     float: right;
-    animation: fish4-moov 8s infinite linear;
+    animation: fish4-moov 3s infinite linear;
     position: absolute;
 }
 
@@ -313,6 +317,7 @@ p {
     margin-top: 455px;
     margin-left: 700px;
 }
+
 .seaweed {
     width: 500px;
     height: 250px;
@@ -321,6 +326,7 @@ p {
     position: absolute;
 
 }
+
 .ship {
     width: 400px;
     height: 300px;
@@ -328,5 +334,3 @@ p {
     margin-top: -50px;
 
 }
-
-

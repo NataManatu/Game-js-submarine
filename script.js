@@ -69,7 +69,7 @@ let interval = setInterval(() => {
 			//Если произошло столкновение с красной рыбой
 			
 			if (element.classList.contains("red-fish")) {
-				gameScore += 2
+				gameScore += 1
 			}
 			else if (element.classList.contains("parus")) {
 				gameScore -= 3
@@ -79,7 +79,7 @@ let interval = setInterval(() => {
 			}
 
 			else {
-				gameScore -= 1
+				gameScore -= 2
 			}
 
 			scoreMove()
