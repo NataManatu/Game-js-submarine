@@ -16,8 +16,7 @@ function playTrack() {
         play.src = ("pause.png")
     }
     playing = !playing
-
-    
+   
 }
 
 
