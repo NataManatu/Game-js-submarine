@@ -58,7 +58,7 @@ let interval = setInterval(() => {
 		let rectSelection = selection.getBoundingClientRect();
 		let rect = element.getBoundingClientRect();
 		let gameOver = document.getElementById("game-over");
-		gameOver.innerHTML = '<p>твой счет  ' + gameScore + '<br> Game over!</p>'
+		gameOver.innerHTML = '<p>твой счет  ' + gameScore + '<br> Game over!</p><button class="play-again">play again</button>'
 
 		//Если произошло столкновение с объектом
 		if (rect.bottom > rectSelection.top
