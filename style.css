@@ -8,7 +8,7 @@ body {
 .thunder {
     position: absolute;
     width: 1000px;
-    margin-top: -300px;
+    margin-top: -500px;
     justify-content: center;
 }
 
@@ -19,6 +19,7 @@ body {
     height: 700px;
     margin-top: 600px;
     position: relative;
+    /* width: 1600px; */
 }
 
 .game-over {
@@ -120,7 +121,7 @@ p {
     }
 
     to {
-        right: calc(95%);
+        right: calc(90%);
 
     }
 
@@ -147,7 +148,7 @@ p {
     }
 
     to {
-        right: calc(95% - 60px);
+        right: calc(90%);
 
     }
 }
@@ -170,7 +171,7 @@ p {
     }
 
     to {
-        right: calc(100% - 60px);
+        right: calc(90%);
 
     }
 }
@@ -194,7 +195,7 @@ p {
     }
 
     to {
-        right: calc(100% - 60px);
+        right: calc(90%);
 
     }
 }
@@ -218,7 +219,7 @@ p {
     }
 
     to {
-        right: calc(100% - 60px);
+        right: calc(90%);
 
     }
 }
@@ -242,7 +243,7 @@ p {
     }
 
     to {
-        right: calc(100% - 60px);
+        right: calc(90%);
 
     }
 }
@@ -266,7 +267,7 @@ p {
     }
 
     to {
-        right: calc(90% - 60px);
+        right: calc(90%);
 
     }
 
@@ -311,7 +312,7 @@ p {
     }
 }
 
-.img-container {
+.sea-bottom {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -338,7 +339,7 @@ p {
 
 }
 
-.play-again {
+#play-again {
     width: 130px;
     height: 50px;
     border-radius: 50px;
@@ -346,5 +347,5 @@ p {
     border-style: none;
     color: rgb(54, 79, 113);
     font-size: 25px;
-
+    cursor: pointer;
 }

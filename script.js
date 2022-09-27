@@ -1,36 +1,34 @@
+//audio
 let play = document.getElementById("play")
 let music = new Audio('audio/audio2.mp3')
-
-
 let playing = false
-
 play.addEventListener("click", playTrack)
 
 function playTrack() {
-    if (playing) {
-        music.pause()
-        play.src = ("img/play.png")
-    }
-    else {
-        music.play()
-        play.src = ("img/pause.png")
-    }
-    playing = !playing
-   
+	if (playing) {
+		music.pause()
+		play.src = ("img/play.png")
+	}
+	else {
+		music.play()
+		play.src = ("img/pause.png")
+	}
+	playing = !playing
+
 }
 
-
+//Game
 let podLodka = document.getElementById("pod-lodka");
 let y = 0;
 
 function move(event) {
-
+//клавиша-W(подлодка движется вверх)
 	if (event.keyCode == 87) {
 		y = y - 70;
 		podLodka.style.top = y + 'px';
-	
-	}
 
+	}
+//клавиша-X(подлодка движется вниз)
 	if (event.keyCode == 88) {
 		y = y + 100;
 		podLodka.style.top = y + 'px';
@@ -53,12 +51,12 @@ function scoreMove() {
 
 let interval = setInterval(() => {
 	lst.forEach((element) => {
-		
+
 		let selection = podLodka;
 		let rectSelection = selection.getBoundingClientRect();
 		let rect = element.getBoundingClientRect();
 		let gameOver = document.getElementById("game-over");
-		gameOver.innerHTML = '<p>твой счет  ' + gameScore + '<br> Game over!</p><button class="play-again">play again</button>'
+		gameOver.innerHTML = '<p>твой счет  ' + gameScore + '<br> Game over!</p><button id ="play-again">play again</button>'
 
 		//Если произошло столкновение с объектом
 		if (rect.bottom > rectSelection.top
@@ -66,7 +64,7 @@ let interval = setInterval(() => {
 			&& rect.top < rectSelection.bottom
 			&& rect.left < rectSelection.right) {
 			//Если произошло столкновение с красной рыбой
-			
+
 			if (element.classList.contains("red-fish")) {
 				gameScore += 1
 			}
@@ -82,7 +80,7 @@ let interval = setInterval(() => {
 			}
 
 			scoreMove()
-		
+
 		}
 
 		if (gameScore <= -50) {
@@ -94,6 +92,14 @@ let interval = setInterval(() => {
 	})
 
 }, 600);
+
+
+
+// let playAgain = document.getElementById("play-again");
+// playAgain.addEventListener("click", function () {
+// 	console.log(playAgain)
+// })
+
 
 
 
