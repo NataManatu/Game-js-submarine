@@ -1,5 +1,5 @@
 let play = document.getElementById("play")
-let music = new Audio('audio2.mp3')
+let music = new Audio('audio/audio2.mp3')
 
 
 let playing = false
@@ -9,11 +9,11 @@ play.addEventListener("click", playTrack)
 function playTrack() {
     if (playing) {
         music.pause()
-        play.src = ("play.png")
+        play.src = ("img/play.png")
     }
     else {
         music.play()
-        play.src = ("pause.png")
+        play.src = ("img/pause.png")
     }
     playing = !playing
    
