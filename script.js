@@ -22,14 +22,19 @@ let podLodka = document.getElementById("pod-lodka");
 let y = 0;
 
 function move(event) {
-//клавиша-W(подлодка движется вверх)
+	console.log(y)
+	
+	//клавиша-W(подлодка движется вверх)
 	if (event.keyCode == 87) {
-		y = y - 70;
-		podLodka.style.top = y + 'px';
-
+		if (y >= 0) {
+			y = y - 70;
+			podLodka.style.top = y + 'px';
+		}
+	
 	}
-//клавиша-X(подлодка движется вниз)
-	if (event.keyCode == 88) {
+	//клавиша-S(подлодка движется вниз)
+	if (event.keyCode == 83) {
+		// if (y >= 600)
 		y = y + 100;
 		podLodka.style.top = y + 'px';
 	}
