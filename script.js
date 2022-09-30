@@ -23,20 +23,22 @@ let y = 0;
 
 function move(event) {
 	console.log(y)
-	
+
 	//клавиша-W(подлодка движется вверх)
 	if (event.keyCode == 87) {
 		if (y >= 0) {
 			y = y - 70;
 			podLodka.style.top = y + 'px';
 		}
-	
+
 	}
 	//клавиша-S(подлодка движется вниз)
 	if (event.keyCode == 83) {
-		// if (y >= 600)
-		y = y + 100;
-		podLodka.style.top = y + 'px';
+		if (y <= 440) {
+			y = y + 100;
+			podLodka.style.top = y + 'px';
+		}
+
 	}
 }
 addEventListener("keydown", move)
