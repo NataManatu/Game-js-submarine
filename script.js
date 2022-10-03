@@ -98,14 +98,14 @@ let interval = setInterval(() => {
 		}
 	})
 
-}, 600);
+}, 1200);
 
 
 
-// let playAgain = document.getElementById("play-again");
-// playAgain.addEventListener("click", function () {
-// 	console.log(playAgain)
-// })
+let playAgain = document.getElementById("play-again");
+playAgain.addEventListener("click", function () {
+	console.log(playAgain)
+})
 
 
 
