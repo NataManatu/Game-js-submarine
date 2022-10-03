@@ -5,9 +5,33 @@ body {
     box-sizing: border-box;
 }
 
+
+.start-game {
+    background-color: rgb(102, 253, 140);
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 3px;
+}
+
+#play-game {
+    width: 130px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(54, 79, 113);
+    border-style: none;
+    color: rgb(102, 253, 140);
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 400px;
+}
+
 .thunder {
     position: absolute;
-    width: 1000px;
+    width: 700px;
+    height: 500px;
     margin-top: -500px;
     justify-content: center;
 }
@@ -20,6 +44,7 @@ body {
     margin-top: 600px;
     position: relative;
     /* width: 1600px; */
+    display: none;
 }
 
 .game-over {

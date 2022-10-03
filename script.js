@@ -63,7 +63,8 @@ let interval = setInterval(() => {
 		let rectSelection = selection.getBoundingClientRect();
 		let rect = element.getBoundingClientRect();
 		let gameOver = document.getElementById("game-over");
-		gameOver.innerHTML = '<p>твой счет  ' + gameScore + '<br> Game over!</p><button id ="play-again">play again</button>'
+		gameOver.innerHTML = '<p>твой счет  ' + gameScore + '<br> Game over!</p><button id="play-again">play again</button>'
+
 
 		//Если произошло столкновение с объектом
 		if (rect.bottom > rectSelection.top
@@ -96,16 +97,18 @@ let interval = setInterval(() => {
 			clearInterval(interval)
 			// alert("твой счет " + gameScore + " game over!")
 		}
+
+		let playAgain = document.getElementById("play-again");
+		playAgain.addEventListener("click", function () {
+			console.log(playAgain)
+		})
 	})
 
 }, 1200);
 
 
 
-let playAgain = document.getElementById("play-again");
-playAgain.addEventListener("click", function () {
-	console.log(playAgain)
-})
+
 
 
 
