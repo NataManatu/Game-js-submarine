@@ -18,6 +18,19 @@ function playTrack() {
 }
 
 //Game
+let playGameButton = document.getElementById("play-game");
+let startGame = document.querySelector("#game-container");
+let startGameSubmarine = document.querySelector(".container");
+
+function playGame() {
+	startGame.style.display = "block";
+	startGameSubmarine.style.display = "none";
+	// alert("ff")	
+}
+playGameButton.addEventListener("click", playGame)
+// setTimeout(playGame, 1000);
+
+
 let podLodka = document.getElementById("pod-lodka");
 let y = 0;
 
