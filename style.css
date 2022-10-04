@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+
 }
 
 .container {
@@ -62,9 +64,9 @@ h1 {
 
 .thunder {
     position: absolute;
-    width: 700px;
-    height: 500px;
-    margin-top: -500px;
+    width: 500px;
+    height: 300px;
+    margin-top: -300px;
     justify-content: center;
 }
 
@@ -217,7 +219,7 @@ p {
     width: 120px;
     height: 120px;
     float: right;
-    animation: fish1-moov 3s infinite linear;
+    animation: fish1-moov 5s infinite linear;
     position: absolute;
 }
 

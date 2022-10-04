@@ -17,6 +17,7 @@ function playTrack() {
 
 }
 
+
 //Game
 let playGameButton = document.getElementById("play-game");
 let startGame = document.querySelector("#game-container");
@@ -34,7 +35,10 @@ playGameButton.addEventListener("click", playGame)
 let podLodka = document.getElementById("pod-lodka");
 let y = 0;
 
+
+//движение лодки
 function move(event) {
+	
 	console.log(y)
 
 	//клавиша-W(подлодка движется вверх)
@@ -57,16 +61,10 @@ function move(event) {
 addEventListener("keydown", move)
 
 
-
+//все проплывающие элементы
 let lst = document.querySelectorAll('.game-img');
 let gameEnded = false;
 let gameScore = 0
-
-function scoreMove() {
-	let score = document.getElementById("score")
-	score.innerHTML = `<p> ` + gameScore + `</p>`
-}
-
 
 
 let interval = setInterval(() => {
@@ -117,7 +115,24 @@ let interval = setInterval(() => {
 		})
 	})
 
-}, 1200);
+}, 1400);
+
+
+
+//подсчёт очков захваченных элементов
+function scoreMove() {
+	let score = document.getElementById("score")
+	score.innerHTML = `<p> ` + gameScore + `</p>`
+}
+
+
+function pause(event){
+	if (event.keyCode == 88) {
+		
+
+	}
+}
+
 
 
 
