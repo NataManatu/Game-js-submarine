@@ -38,7 +38,7 @@ let y = 0;
 
 //движение лодки
 function move(event) {
-	
+
 	console.log(y)
 
 	//клавиша-W(подлодка движется вверх)
@@ -55,6 +55,11 @@ function move(event) {
 			y = y + 100;
 			podLodka.style.top = y + 'px';
 		}
+
+	}
+	//пауза
+	if (event.keyCode == 88) {
+		alert("pause")
 
 	}
 }
@@ -99,7 +104,7 @@ let interval = setInterval(() => {
 			}
 
 			scoreMove()
-
+			
 		}
 
 		if (gameScore <= -50) {
@@ -126,12 +131,6 @@ function scoreMove() {
 }
 
 
-function pause(event){
-	if (event.keyCode == 88) {
-		
-
-	}
-}
 
 
 
